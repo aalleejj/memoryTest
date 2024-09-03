@@ -3,68 +3,52 @@ document.addEventListener('DOMContentLoaded', () => {
     //Cards
     const cards = [
         {
-            name: 'jaebeom',
-            img: 'Images/jaebeom.png'
+            name: 'Crystal',
+            img: 'Images/protection_crystal.png'
         },
         {
-            name: 'mark',
-            img: 'Images/mark.png'
+            name: 'Gift',
+            img: 'Images/gift_box.png'
         },
         {
-            name: 'jackson',
-            img: 'Images/jackson.png'
+            name: 'Drum',
+            img: 'Images/super_charge_drum.png'
         },
         {
-            name: 'youngjae',
-            img: 'Images/youngjae.png'
+            name: 'Food',
+            img: 'Images/Super_pet_food.png'
         },
         {
-            name: 'jinyoung',
-            img: 'Images/jinyoung.png'
+            name: 'Lens',
+            img: 'Images/advance_lens.png'
         },
         {
-            name: 'bambam',
-            img: 'Images/bambam.png'
+            name: 'Structure',
+            img: 'Images/Ship_structure.png'
         },
         {
-            name: 'yugyeom',
-            img: 'Images/yugyeom.png'
-        },
-		{
-            name: 'got7greenlogo',
-            img: 'Images/got7greenlogo.png'
-        },
-          {
-            name: 'jaebeom',
-            img: 'Images/jaebeom.png'
+            name: 'Crystal',
+            img: 'Images/protection_crystal.png'
         },
         {
-            name: 'mark',
-            img: 'Images/mark.png'
+            name: 'Gift',
+            img: 'Images/gift_box.png'
         },
         {
-            name: 'jackson',
-            img: 'Images/jackson.png'
+            name: 'Drum',
+            img: 'Images/super_charge_drum.png'
         },
         {
-            name: 'youngjae',
-            img: 'Images/youngjae.png'
+            name: 'Food',
+            img: 'Images/Super_pet_food.png'
         },
         {
-            name: 'jinyoung',
-            img: 'Images/jinyoung.png'
+            name: 'Lens',
+            img: 'Images/advance_lens.png'
         },
         {
-            name: 'bambam',
-            img: 'Images/bambam.png'
-        },
-        {
-            name: 'yugyeom',
-            img: 'Images/yugyeom.png'
-        },
-		{
-            name: 'got7greenlogo',
-            img: 'Images/got7greenlogo.png'
+            name: 'Structure',
+            img: 'Images/Ship_structure.png'
         }
     ]
 
@@ -79,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard(){
         for(let i = 0; i < cards.length; i++){
             var card = document.createElement('img');
-            card.setAttribute('src', 'Images/got7logo.png');
+            card.setAttribute('src', 'Images/Treasure_map.png');
             card.setAttribute('data-id', i);
             card.setAttribute('width', '100px');
             card.setAttribute('height', '100px');
@@ -104,8 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
             cards[optionTwoID].removeEventListener('click', flipCard);
             cardsWon.push(cardsChosen);
         }else{
-            cards[optionOneID].setAttribute('src', 'Images/got7logo.png')
-            cards[optionTwoID].setAttribute('src', 'Images/got7logo.png')
+            cards[optionOneID].setAttribute('src', 'Images/Treasure_map.png')
+            cards[optionTwoID].setAttribute('src', 'Images/Treasure_map.png')
         }
         cardsChosen = [];
         cardsChosenID = [];

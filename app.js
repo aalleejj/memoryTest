@@ -4,67 +4,67 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = [
         {
             name: 'jaebeom',
-            img: 'images/jaebeom.png'
+            img: 'Images/jaebeom.png'
         },
         {
             name: 'mark',
-            img: 'images/mark.png'
+            img: 'Images/mark.png'
         },
         {
             name: 'jackson',
-            img: 'images/jackson.png'
+            img: 'Images/jackson.png'
         },
         {
             name: 'youngjae',
-            img: 'images/youngjae.png'
+            img: 'Images/youngjae.png'
         },
         {
             name: 'jinyoung',
-            img: 'images/jinyoung.png'
+            img: 'Images/jinyoung.png'
         },
         {
             name: 'bambam',
-            img: 'images/bambam.png'
+            img: 'Images/bambam.png'
         },
         {
             name: 'yugyeom',
-            img: 'images/yugyeom.png'
+            img: 'Images/yugyeom.png'
         },
 		{
             name: 'got7greenlogo',
-            img: 'images/got7greenlogo.png'
+            img: 'Images/got7greenlogo.png'
         },
           {
             name: 'jaebeom',
-            img: 'images/jaebeom.png'
+            img: 'Images/jaebeom.png'
         },
         {
             name: 'mark',
-            img: 'images/mark.png'
+            img: 'Images/mark.png'
         },
         {
             name: 'jackson',
-            img: 'images/jackson.png'
+            img: 'Images/jackson.png'
         },
         {
             name: 'youngjae',
-            img: 'images/youngjae.png'
+            img: 'Images/youngjae.png'
         },
         {
             name: 'jinyoung',
-            img: 'images/jinyoung.png'
+            img: 'Images/jinyoung.png'
         },
         {
             name: 'bambam',
-            img: 'images/bambam.png'
+            img: 'Images/bambam.png'
         },
         {
             name: 'yugyeom',
-            img: 'images/yugyeom.png'
+            img: 'Images/yugyeom.png'
         },
 		{
             name: 'got7greenlogo',
-            img: 'images/got7greenlogo.png'
+            img: 'Images/got7greenlogo.png'
         }
     ]
 
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard(){
         for(let i = 0; i < cards.length; i++){
             var card = document.createElement('img');
-            card.setAttribute('src', 'images/got7logo.png');
+            card.setAttribute('src', 'Images/got7logo.png');
             card.setAttribute('data-id', i);
             card.setAttribute('width', '100px');
             card.setAttribute('height', '100px');
@@ -98,14 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoID = cardsChosenID[1];
 
         if(cardsChosen[0] === cardsChosen[1]){
-            cards[optionOneID].setAttribute('src', 'images/Empty.png');
-            cards[optionTwoID].setAttribute('src', 'images/Empty.png');
+            cards[optionOneID].setAttribute('src', 'Images/Empty.png');
+            cards[optionTwoID].setAttribute('src', 'Images/Empty.png');
             cards[optionOneID].removeEventListener('click', flipCard);
             cards[optionTwoID].removeEventListener('click', flipCard);
             cardsWon.push(cardsChosen);
         }else{
-            cards[optionOneID].setAttribute('src', 'images/got7logo.png')
-            cards[optionTwoID].setAttribute('src', 'images/got7logo.png')
+            cards[optionOneID].setAttribute('src', 'Images/got7logo.png')
+            cards[optionTwoID].setAttribute('src', 'Images/got7logo.png')
         }
         cardsChosen = [];
         cardsChosenID = [];
